@@ -19,27 +19,23 @@ public class StrategyApp {
         team.setGameStrategy(new HalfAttackStrategy());
         team.play(1);
 
-        team.setGameStrategy(new GameStrategy() {
-            @Override
-            public void play(int numberOfPlayers) {
-                System.out.println("Simula faltas");
-            }
-        });
+        //Aplicacion de Lambda
+        team.setGameStrategy(numberOfPlayers -> System.out.println("Simula faltas"));
         team.play(0);
 
-        //Atacar por las bandas
+        //Atacar por las bandas - Alvaro
         team.setGameStrategy(new WingAttackStrategy());
         team.play(4);
 
-        //Atacar por el centro
+        //Atacar por el centro - Guillermo
         team.setGameStrategy(new CenterAttackStrategy());
         team.play(5);
 
-        //Contrataque
+        //Contrataque - Patricia
         team.setGameStrategy(new CounterAttackStrategy());
         team.play(4);
 
-        //Pases largos
+        //Pases largos - Manuel
         team.setGameStrategy(new LongPassesStrategy());
         team.play(4);
     }
