@@ -1,6 +1,6 @@
 # StrategyExercise
 
-Tarea Grupal 8 - Strategy Patterns
+# Tarea Grupal 8 - Strategy Patterns
 
 Guillermo Soliz Nagatoshi
 
